@@ -11,4 +11,4 @@
 [성공] 2022.05. 16 SWEA 1206. View 
 
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
+
