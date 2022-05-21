@@ -11,6 +11,9 @@ for testcase in range(1, 11):
             if sentence[i:i+len(search)]==search:
                 result+=1
 
-    print('#'+str(testcase), result)
+    result2=0
+    result2=sentence.count(search)
+
+    print('#'+str(testcase), result2)
 
 
