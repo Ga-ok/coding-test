@@ -1,4 +1,4 @@
-# string
+# string 문제 풀이
 
 for testcase in range(1, 11):
     tn = int(input())
