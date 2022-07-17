@@ -1,4 +1,7 @@
-# 미로 1
+# 서울_임베디드_21반_이가옥
+
+# SW전공_선택 문제풀이
+# 1226. 미로 1
 
 from collections import deque
 def bfs(s):
