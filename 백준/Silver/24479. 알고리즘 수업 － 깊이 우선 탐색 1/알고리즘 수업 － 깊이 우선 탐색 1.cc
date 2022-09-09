@@ -6,7 +6,6 @@ using namespace std;
 vector<int> v[100001];
 int visited[100001];
 int DAT[100001];
-//vector<int> path;
 int n = 1;
 void dfs(int node) {
 
@@ -16,7 +15,6 @@ void dfs(int node) {
 		if (visited[next] != 0) continue;
 		visited[next] = 1;
 
-		//path.push_back(next);
 		n++;
 		DAT[next] = n;
 		dfs(next);
@@ -43,16 +41,6 @@ int main() {
 	visited[r] = 1;
 	DAT[r] = 1;
 	dfs(r);
-
-	/*for (int i = 0; i < path.size(); i++) {
-		cout << path[i] << "\n";
-	}
-
-	while (path.size() != n) {
-		cout << 0 << "\n";
-		path.push_back(0);
-	}
-	*/
 
 	for (int i = 1; i <= n; i++) {
 		cout << DAT[i] << "\n";
