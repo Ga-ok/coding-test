@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <queue>
 using namespace std;
 
@@ -46,7 +45,6 @@ int main() {
 	}
 
 	int cnt = 0;
-	//vector<int> areaSizes;
 	priority_queue<int, vector<int>, greater<int>> areaSizes;
 	for (int i = 0; i < m; i++) {
 		for (int j = 0; j < n; j++) {
