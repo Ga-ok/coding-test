@@ -12,8 +12,8 @@ struct Edge {
 };
 
 bool operator < (Edge a, Edge b) {
-	if (a.cost < b.cost) return true;
-	if (a.cost > b.cost) return false;
+	if (a.cost > b.cost) return true;
+	if (a.cost < b.cost) return false;
 	return false;
 };
 
@@ -65,7 +65,7 @@ int main() {
 
 			if (dist[next] < dist[now] + nextDist) continue;
 			dist[next] = dist[now] + nextDist;
-			pq.push({ next, -dist[next] });
+			pq.push({ next, dist[next] });
 		}
 
 	}
