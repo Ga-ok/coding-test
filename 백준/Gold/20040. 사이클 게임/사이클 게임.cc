@@ -3,17 +3,17 @@
 using namespace std;
 int parent[500001];
 
-int find(int root) {
-	if (parent[root] == root) return root;
-	return parent[root] = find(parent[root]);
+int find(int now) {
+	if (parent[now] == now) return now;
+	return parent[now] = find(parent[now]);
 }
 
 void Union(int a, int b) {
-	a = find(parent[a]);
-	b = find(parent[b]);
+	int pa = find(a);
+	int pb = find(b);
 
-	if (a == b) return;
-	parent[b] = a;
+	if (pa == pb) return;
+	parent[pb] = pa;
 }
 
 int main() {
